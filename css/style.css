@@ -141,9 +141,14 @@ opacity: 1;
     .total{
         flex-direction: column;
         height: 1300px;
-        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
+    }
+    .image{
+        display: none;
+    }
+    .image1{
+        display: none;
     }
     
 }
