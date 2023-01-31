@@ -1,6 +1,6 @@
 .P1{
 display: flex;
-flex-wrap: nowrap;
+flex-wrap: wrap;
 top: 0px;
 left: 0px;
 width: 1560px;
@@ -17,6 +17,21 @@ height: 80px;
 background: #FFFFFF 0% 0% no-repeat padding-box;
 opacity: 1;
 }
+.m1{
+    display: flex;
+    justify-content: flex-start;
+    height: 80px;
+    width: 780px;
+}
+.m2{
+    display: flex;
+    position: relative;
+    bottom: 80px;
+    left: 780px;
+    justify-content: flex-end;
+    height: 80px;
+    width: 780px;
+}
 /* .menubar{
 position: relative;
 top: 34px;
@@ -27,8 +42,6 @@ height: 12px;
 opacity: 1;
 } */
 .img1{
-display: flex;
-align-items: flex-start;
 position: relative;
 top: 34px;
 bottom: 34px;
@@ -38,32 +51,25 @@ height: 12px;
 opacity: 1;
 }
 .logo1{
-    display: flex;
-    align-items: flex-start;
     position: relative;
-    left: 72px;
-    top: 13px;
-    bottom: 25px;
+    left: 52px;
+    top: 25px;
     width: 142px;
     height: 30px;
     opacity: 1;
 }
 .search{
-    display: flex;
-    align-items: flex-start;
     position: relative;
-    bottom: 11px;
-    left: 291px;
+    top: 31.67px;
+    left: 126.67px;
     width: 16px;
 height: 16px;
 opacity: 1;
 }
 .text{
-    display: flex;
-    align-items: flex-start;
     position: relative;
-    bottom: 30px;
-left: 321px;
+    left: 141.74px;
+    top: 29.47px;
 width: 49px;
 height: 21px;
 text-align: left;
@@ -73,66 +79,46 @@ color: #000000;
 opacity: 1;
 }
 .noti{
-    display: flex;
-    align-items: flex-start;
     position: relative;
-    bottom: 66px;
-    left: 1294px;
+    top: 28.28px;
+    right: 132.28px;
     width: 22px;
     height: 21px;
     opacity: 1;
 }
 .noti1{
-    
-    bottom: 66px;
-    left: 1294px;
     width: 22px;
     height: 21px;
     opacity: 1;
 }
 .profile{
-    display: flex;
-
     position: relative;
-    margin-top: 18px;
-    bottom: 116px;
-    left: 1368px;
+    top: 18px;
+    right: 80px;
 width: 44px;
 height: 44px;
 opacity: 1;
 }
 .text1{
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: nowrap;
     position: relative;
-    bottom: 150px;
-    left: 1424px;
+    right: 60px;
+    top: 27.97px;
 width: 68px;
 height: 21px;
 text-align: left;
 font: normal normal normal 16px/21px Roboto;
 letter-spacing: 0px;
+font-size: 16px;
 color: #000000;
 opacity: 1;
 }
 .down{
     position: relative;
-    bottom: 186px;
-    left: 1507px;
+    top: 30.5px;
+    right: 43.53px;
 width: 10px;
 height: 6px;
 }
-/* .sidebar{
-    position: relative;
-    top: 80px;
-left: 1318px;
-right: 1318px;
-width: 242px;
-height: 1890px;
-background: #FFFFFF 0% 0% no-repeat padding-box;
-opacity: 1;
-} */
 .wrapper .sidebar{
     
 	background: #FFFFFF;
@@ -936,4 +922,9 @@ opacity: 1;
 }
 .p42:checked+.p43+.p44{
     display: initial;
+}
+@media(max-width:400px){
+    .p1{
+        width: 50%;
+    }
 }
